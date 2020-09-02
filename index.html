@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https //maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="inData">
+        <table border="0">
+            <tr>
+                <td><h4>Select CSV:</h4></td>
+                <td><input type="file" name="getCSY" accept=".csv" id="myfile"></td>
+                <td rowspan="4"><img class="icon"></td>
+                <td><h4>Today's Weather</h4></td>
+            </tr>
+            <tr>
+                <td><h4>Enter Date:</h4></td>
+                <td><input type="date" name="sDate" min="2020-08-01" max="2020-08-31"></td>
+                <td><h4 class="weather"></h4></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp</td>
+                <td><h4 class="temp"></h4></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="view_weather" value="view weather" ></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="outData" >
+        <table border="0">
+            <tr>
+                <td>
+                    <table id="cust_data" border="0"></table>
+                </td>
+                <td>
+                    <table id="w_data" border="0"></table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
